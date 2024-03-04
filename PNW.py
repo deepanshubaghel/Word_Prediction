@@ -1,5 +1,4 @@
 import os
-import time
 import pandas as pd
 import numpy as np
 
@@ -55,7 +54,6 @@ class WordProbabilities:
                 print(f"--->> {word}: {np.exp(prob):.3f}")
 
 # Main processing
-start_time = time.time()
 directory = 'Drectory PATH'
 input_file = 'File PATH'
 find_word = 'beautiful' 
@@ -72,7 +70,3 @@ prob_matrix.save_probability_table(directory, file_name)
 word_probabilities = WordProbabilities(prob_matrix.prob_matrix, prob_matrix.unique_words)
 word_probabilities.find_probabilities(find_word)
 
-end_time = time.time()
-time_diff = end_time - start_time
-
-minutes, seconds, milliseconds = int(time_diff // 60), int(time_diff % 60), int((time_diff * 1000) % 1000)

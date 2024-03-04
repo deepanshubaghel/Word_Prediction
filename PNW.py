@@ -56,9 +56,9 @@ class WordProbabilities:
 
 # Main processing
 start_time = time.time()
-directory = 'E:/MCA 2 LAB/IT LAB'
-input_file = 'E:/MCA 2 LAB/IT LAB/words.txt'
-find_word = 'beautiful'
+directory = 'Drectory PATH'
+input_file = 'File PATH'
+find_word = 'beautiful' 
 file_name = input("Enter File Name As You Want To Save:--> ")
 
 with open(input_file, 'r', encoding='UTF-8') as f:
